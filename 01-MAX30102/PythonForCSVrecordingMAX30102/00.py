@@ -1,0 +1,12 @@
+import matplotlib.pyplot as plt
+
+points = [(10,5), (5,11), (24,13), (7,8)]
+x_arr = []
+y_arr = []
+for x,y in points:
+    x_arr.append(x)
+    y_arr.append(y)
+plt.scatter(x_arr,y_arr)
+plt.gca().invert_xaxis()
+
+plt.show()
